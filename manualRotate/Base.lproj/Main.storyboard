@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UiC-5a-YYy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="C67-Z0-dUz">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="UiC-5a-YYy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e0b-Sa-GLY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tEe-Qm-46K" kind="relationship" relationship="rootViewController" id="xRL-7f-uIh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOi-rK-A09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="157"/>
+        </scene>
+        <!--全屏旋转-->
+        <scene sceneID="C1L-Sr-88n">
+            <objects>
+                <viewController id="89Q-v1-zO3" customClass="FullViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ya-wA-7RZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn6-pt-c6D">
+                                <rect key="frame" x="103" y="124" width="169" height="30"/>
+                                <state key="normal" title="点我展示需要旋转的视图"/>
+                                <connections>
+                                    <action selector="click:" destination="89Q-v1-zO3" eventType="touchUpInside" id="mpL-EI-zMY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pn6-pt-c6D" firstAttribute="top" secondItem="vdj-JC-ZgZ" secondAttribute="top" constant="60" id="PN2-4c-okV"/>
+                            <constraint firstItem="Pn6-pt-c6D" firstAttribute="centerX" secondItem="5ya-wA-7RZ" secondAttribute="centerX" id="esL-tw-KTG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vdj-JC-ZgZ"/>
                     </view>
+                    <navigationItem key="navigationItem" title="全屏旋转" id="pFn-Nf-8C9"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wh2-yM-JOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1836" y="-198.35082458770617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IVw-EV-cWh">
+            <objects>
+                <viewController id="tEe-Qm-46K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gn0-Vl-olN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNi-sB-JkO">
+                                <rect key="frame" x="141" y="181" width="93" height="30"/>
+                                <state key="normal" title="全屏view旋转"/>
+                                <connections>
+                                    <segue destination="89Q-v1-zO3" kind="push" id="N4w-YL-6rw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQB-qb-gpE">
+                                <rect key="frame" x="72" y="283" width="230" height="30"/>
+                                <state key="normal" title="非全屏view旋转，例如视频播放器"/>
+                                <connections>
+                                    <segue destination="630-sx-9Bw" kind="push" id="t1J-Ur-kJu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iNi-sB-JkO" firstAttribute="top" secondItem="jva-UT-siq" secondAttribute="top" constant="117" id="1gn-WG-DJ8"/>
+                            <constraint firstItem="UQB-qb-gpE" firstAttribute="top" secondItem="iNi-sB-JkO" secondAttribute="bottom" constant="72" id="1um-bV-MSc"/>
+                            <constraint firstItem="UQB-qb-gpE" firstAttribute="centerX" secondItem="gn0-Vl-olN" secondAttribute="centerX" id="7OA-LB-xre"/>
+                            <constraint firstItem="iNi-sB-JkO" firstAttribute="centerX" secondItem="gn0-Vl-olN" secondAttribute="centerX" id="r8o-NP-MQ5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jva-UT-siq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RRt-g0-ewF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Gm-LG-9vr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.79999999999995" y="121.88905547226388"/>
+        </scene>
+        <!--非全屏旋转-->
+        <scene sceneID="WEY-aO-jED">
+            <objects>
+                <viewController id="630-sx-9Bw" customClass="HalfViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MP0-v1-zKf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cj-9t-T1b">
+                                <rect key="frame" x="103" y="197" width="169" height="30"/>
+                                <state key="normal" title="点我展示需要旋转的视图"/>
+                                <connections>
+                                    <action selector="click:" destination="630-sx-9Bw" eventType="touchUpInside" id="MjZ-5c-91I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8cj-9t-T1b" firstAttribute="top" secondItem="BjL-PY-XBG" secondAttribute="top" constant="133" id="hgW-sD-9bM"/>
+                            <constraint firstItem="8cj-9t-T1b" firstAttribute="centerX" secondItem="MP0-v1-zKf" secondAttribute="centerX" id="y9e-iL-JTa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BjL-PY-XBG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="非全屏旋转" id="Jl6-ve-t7m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3X-wT-chy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="612"/>
         </scene>
     </scenes>
 </document>

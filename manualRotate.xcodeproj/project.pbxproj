@@ -15,6 +15,8 @@
 		57547F4D210D55D10092582E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F4C210D55D10092582E /* main.m */; };
 		57547F57210D55D10092582E /* manualRotateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F56210D55D10092582E /* manualRotateTests.m */; };
 		57547F62210D55D10092582E /* manualRotateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F61210D55D10092582E /* manualRotateUITests.m */; };
+		57547F71210D58E10092582E /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F70210D58E10092582E /* FullViewController.m */; };
+		57547F74210D58F60092582E /* HalfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F73210D58F60092582E /* HalfViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		57547F5D210D55D10092582E /* manualRotateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = manualRotateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57547F61210D55D10092582E /* manualRotateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = manualRotateUITests.m; sourceTree = "<group>"; };
 		57547F63210D55D10092582E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57547F6F210D58E10092582E /* FullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullViewController.h; sourceTree = "<group>"; };
+		57547F70210D58E10092582E /* FullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullViewController.m; sourceTree = "<group>"; };
+		57547F72210D58F60092582E /* HalfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfViewController.h; sourceTree = "<group>"; };
+		57547F73210D58F60092582E /* HalfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfViewController.m; sourceTree = "<group>"; };
+		57547F76210D5A3D0092582E /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +108,13 @@
 		57547F3C210D55D10092582E /* manualRotate */ = {
 			isa = PBXGroup;
 			children = (
+				57547F76210D5A3D0092582E /* Common.h */,
 				57547F3D210D55D10092582E /* AppDelegate.h */,
 				57547F3E210D55D10092582E /* AppDelegate.m */,
+				57547F6F210D58E10092582E /* FullViewController.h */,
+				57547F70210D58E10092582E /* FullViewController.m */,
+				57547F72210D58F60092582E /* HalfViewController.h */,
+				57547F73210D58F60092582E /* HalfViewController.m */,
 				57547F40210D55D10092582E /* ViewController.h */,
 				57547F41210D55D10092582E /* ViewController.m */,
 				57547F43210D55D10092582E /* Main.storyboard */,
@@ -262,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57547F74210D58F60092582E /* HalfViewController.m in Sources */,
 				57547F42210D55D10092582E /* ViewController.m in Sources */,
+				57547F71210D58E10092582E /* FullViewController.m in Sources */,
 				57547F4D210D55D10092582E /* main.m in Sources */,
 				57547F3F210D55D10092582E /* AppDelegate.m in Sources */,
 			);
@@ -434,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CU5KU23LFX;
 				INFOPLIST_FILE = manualRotate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CU5KU23LFX;
 				INFOPLIST_FILE = manualRotate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
