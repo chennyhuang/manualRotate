@@ -17,6 +17,7 @@
 		57547F62210D55D10092582E /* manualRotateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F61210D55D10092582E /* manualRotateUITests.m */; };
 		57547F71210D58E10092582E /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F70210D58E10092582E /* FullViewController.m */; };
 		57547F74210D58F60092582E /* HalfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57547F73210D58F60092582E /* HalfViewController.m */; };
+		FD29194E22150F6F001AC7BE /* HZNavigatonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD29194C22150F6F001AC7BE /* HZNavigatonController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		57547F72210D58F60092582E /* HalfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfViewController.h; sourceTree = "<group>"; };
 		57547F73210D58F60092582E /* HalfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfViewController.m; sourceTree = "<group>"; };
 		57547F76210D5A3D0092582E /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		FD29194C22150F6F001AC7BE /* HZNavigatonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZNavigatonController.m; sourceTree = "<group>"; };
+		FD29194D22150F6F001AC7BE /* HZNavigatonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZNavigatonController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 		57547F3C210D55D10092582E /* manualRotate */ = {
 			isa = PBXGroup;
 			children = (
+				FD29194D22150F6F001AC7BE /* HZNavigatonController.h */,
+				FD29194C22150F6F001AC7BE /* HZNavigatonController.m */,
 				57547F76210D5A3D0092582E /* Common.h */,
 				57547F3D210D55D10092582E /* AppDelegate.h */,
 				57547F3E210D55D10092582E /* AppDelegate.m */,
@@ -277,6 +282,7 @@
 				57547F74210D58F60092582E /* HalfViewController.m in Sources */,
 				57547F42210D55D10092582E /* ViewController.m in Sources */,
 				57547F71210D58E10092582E /* FullViewController.m in Sources */,
+				FD29194E22150F6F001AC7BE /* HZNavigatonController.m in Sources */,
 				57547F4D210D55D10092582E /* main.m in Sources */,
 				57547F3F210D55D10092582E /* AppDelegate.m in Sources */,
 			);
